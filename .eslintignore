@@ -1,0 +1,6 @@
+node_modules/
+frontend/
+android/
+ios/
+patches/
+buck-out/

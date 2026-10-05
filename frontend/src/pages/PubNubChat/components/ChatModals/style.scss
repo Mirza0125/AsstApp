@@ -1,0 +1,346 @@
+.modal-backdrop {
+    &.show {
+        z-index: 9 !important;
+    }
+}
+
+.chat-message-modal {
+    z-index: 9 !important;
+
+    .modal-dialog {
+        width: 726px;
+        max-width: 100%;
+
+        @media (max-width: 768px) {
+            margin: 15px auto;
+            max-width: 90%;
+        }
+
+        @media (min-width:1920px) {
+            width: 1000px;
+        }
+
+    }
+
+    .modal-content {
+        border-radius: 16px !important;
+    }
+
+    .modal-header {
+        justify-content: center;
+        position: relative;
+        border: unset;
+        padding-top: 53px;
+        padding-bottom: 0;
+
+        @media (max-width: 1600px) and (max-height:1000px) {
+            padding-top: 30px;
+        }
+
+        @media (max-width:1366px) {
+            padding-top: 25px;
+        }
+
+        @media (max-width:1366px) and (max-height:600px) {
+            padding-top: 20px;
+        }
+
+        .modal-title {
+            .top-img {
+                margin-bottom: 35px;
+
+                @media (max-width: 1440px) and (max-height: 900px) {
+                    margin-bottom: 15px;
+
+                    img {
+                        height: 120px;
+                    }
+                }
+
+                @media (max-width: 1366px) {
+                    margin-bottom: 10px;
+
+                    img {
+                        height: 100px;
+                    }
+                }
+            }
+
+            .head-title {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 50px;
+                text-align: center;
+
+                @media (max-width: 1600px) and (max-height:1000px) {
+                    margin-bottom: 40px;
+                    font-size: 28px;
+                }
+
+                @media (max-width:1440px) and (max-height:900px) {
+                    margin-bottom: 30px;
+                }
+
+
+                @media (max-width:1366px) {
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                }
+
+                @media (max-width:1366px) and (max-height:600px) {
+                    font-size: 26px;
+                }
+
+                @media (max-width: 1280px) {
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .close-icon {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            cursor: pointer;
+            z-index: 0;
+
+            @media(max-width:1366px) {
+                top: 8px;
+            }
+
+            @media (max-width: 768px) {
+                top: 0;
+                right: 10px;
+
+                img {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+
+            @media (max-width:576px) {
+                right: 8px;
+            }
+        }
+    }
+
+    .modal-body {
+        padding: 0 30px 50px;
+
+        @media (max-width: 1366px) {
+            padding-bottom: 25px;
+        }
+
+        @media (max-width:768px) {
+            padding: 0 10px 20px;
+        }
+
+        .modal-body-details-wrapper {
+
+            margin: auto;
+
+            @media (min-width: 1920px) {
+                max-width: 1100px;
+            }
+
+            .button-wrapper {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+
+                .board-btn {
+                    min-width: 265px;
+
+                    &.transparent-btn {
+                        margin-left: 30px;
+                    }
+
+                    @media (max-width: 1024px) {
+                        min-width: 215px;
+                    }
+
+                    @media (max-width: 768px) {
+                        min-width: 185px;
+                    }
+
+                    @media (max-width: 576px) {
+                        min-width: unset;
+                        flex-basis: 48%;
+                        font-size: 12px;
+
+                        &.transparent-btn {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    @media (max-width: 350px) {
+                        font-size: 10px;
+                    }
+                }
+
+                &.chat-button {
+                    margin-top: 30px;
+                }
+            }
+
+            .new-chat-section,
+            .group-chat-section {
+                .users-wrapper {
+                    height: calc(100vh - 440px);
+                    max-height: 100%;
+                    overflow: auto;
+                    scrollbar-width: thin;
+                    padding: 10px 0;
+
+                    @media (min-height: 950px) {
+                        height: calc(100vh - 540px);
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                        background-color: #d0dae5;
+                        border-radius: 6px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        width: 6px;
+                        background-color: #30D5C8;
+                        border-radius: 6px;
+                    }
+
+                    .user-item {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+
+                        &.active {
+                            color: #30D5C8;
+                        }
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+
+                        .avatar {
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-end;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        .name {
+                            margin-left: 15px;
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .search-field {
+                    margin-bottom: 22px;
+                    margin-left: 0;
+                    width: 100%;
+
+                    .input-base {
+                        width: 100%;
+                        padding-right: 60px;
+                    }
+
+                    .search-icon {
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        position: absolute;
+                    }
+                }
+            }
+
+            .group-chat-section {
+                // label {
+                //     margin-bottom: 4px;
+                // }
+
+                .search-field {
+                    width: 100%;
+                }
+
+                .group-photo-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    @media (max-width: 1366px) {
+                        margin-bottom: 15px;
+                    }
+
+                    .group-photo {
+                        height: 80px;
+                        width: 80px;
+                        border-radius: 50%;
+                        border: 2px solid #6F8BDF;
+                        overflow: hidden;
+                        text-align: center;
+                        cursor: pointer;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+
+                        @media (max-width: 1366px) {
+                            height: 60px;
+                            width: 60px;
+                        }
+
+                    }
+
+                    .text {
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-top: 10px;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .modal-footer {
+        border: unset;
+        padding-bottom: 53px;
+        margin-top: 40px;
+        justify-content: center;
+
+        @media (max-height:1000px) {
+            padding-bottom: 30px;
+        }
+
+        @media (max-width:1366px) {
+            margin-top: 20px;
+            padding-bottom: 25px;
+        }
+
+        @media (min-width:1920px) {
+            margin-top: 60px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyBys0v7DClekPb1WB7Xn-Hw7MzfbjVAM24",
+  authDomain: "lucky-moon-22350.firebaseapp.com",
+  databaseURL: "https://lucky-moon-22350-default-rtdb.firebaseio.com",
+  projectId: "lucky-moon-22350",
+  storageBucket: "lucky-moon-22350.appspot.com",
+  messagingSenderId: "798670297748",
+  appId: "1:798670297748:web:80637ae5ded34f52113281",
+  measurementId: "G-SG7FVYXRQC"
+};

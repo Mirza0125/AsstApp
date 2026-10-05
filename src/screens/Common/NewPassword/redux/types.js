@@ -1,0 +1,8 @@
+export default {
+  REQUEST_NEW_PASSWORD: 'luckyMoon/NewPassword/REQUEST_UPDATE_PASSWORD',
+  REQUEST_NEW_PASSWORD_SUCCESS:
+    'luckyMoon/NewPassword/REQUEST_UPDATE_PASSWORD_SUCCESS',
+  REQUEST_NEW_PASSWORD_FAILURE:
+    'luckyMoon/NewPassword/REQUEST_UPDATE_PASSWORD_FAILURE',
+  RESET: 'luckyMoon/NewPassword/RESET',
+};

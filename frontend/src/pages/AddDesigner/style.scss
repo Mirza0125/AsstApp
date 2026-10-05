@@ -1,0 +1,31 @@
+.add-designer-wrapper {
+  padding-left: 40px;
+  padding-top: 34px;
+  .designer-input-fields {
+    margin-top: 40px;
+    // margin-bottom: 24px;
+    .designer-full-name {
+      padding-bottom: 14px !important;
+      width: 345px !important;
+      height: 49px !important;
+    }
+    .designer-email {
+      width: 345px !important;
+      height: 49px !important;
+    }
+  }
+  .designer-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 34px;
+  }
+  .add-designer-button {
+    width: 345px !important;
+    height: 49px !important;
+    background: #30d5c8 !important;
+    border-radius: 10px !important;
+  }
+}

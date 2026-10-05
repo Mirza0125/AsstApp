@@ -1,0 +1,78 @@
+.my-profile-section-wrapper {
+  padding: 36px 40px;
+
+  .my-profile-wrapper {
+    display: flex;
+
+    .my-profile-details-wrapper {
+      width: 100%;
+      height: calc(100vh - 250px);
+      max-height: 100%;
+      overflow: auto;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .my-profile-details {
+        max-width: 345px;
+        width: 100%;
+        margin: auto;
+
+        .update-concierge-btn {
+          width: 100%;
+        }
+
+        .my-profile-info {
+          text-align: center;
+
+          .avatar {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #30d5c8;
+            margin: auto;
+
+            img {
+              height: 100%;
+              width: 100%;
+              border-radius: 50%;
+            }
+          }
+
+          p {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 0;
+          }
+        }
+
+        .my-profile-fields-wrapper {
+          margin-top: 40px;
+
+          @media (max-width: 1366px) {
+            margin-top: 20px;
+          }
+
+          // .error-message {
+          //   display: none;
+          // }
+
+          .input-field-wrapper {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.concierge-dummy-profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-top: 5px;
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "798670297748",
+    "firebase_url": "https://lucky-moon-22350-default-rtdb.firebaseio.com",
+    "project_id": "lucky-moon-22350",
+    "storage_bucket": "lucky-moon-22350.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798670297748:android:1e587517a9bfdd51113281",
+        "android_client_info": {
+          "package_name": "com.lucky_moon_20705"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798670297748-k96jmaleltri8lemjg4otuom7oj2e513.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK5XZNrZcUs_JsjH1BSazPIfFZuI4u3O4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798670297748-k96jmaleltri8lemjg4otuom7oj2e513.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "798670297748-4fl75n82u3u4tuqh0lnsadekh2ejhpr1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.crowdbotics.LuckyMoon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

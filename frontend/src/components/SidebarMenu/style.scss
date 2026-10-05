@@ -1,0 +1,86 @@
+@import '../../assets/scss/theme-variable.scss';
+
+.sidebar-section {
+  padding: 30px 0 30px 0;
+
+  .sidebar-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  .list {
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    .items-section {
+      display: flex;
+      margin-bottom: 20px;
+
+      .main-item {
+        padding-left: 30px !important;
+
+        @media (max-width: 1024px) {
+          padding-left: 10px !important;
+        }
+
+        .MuiTouchRipple-root {
+          display: none;
+        }
+      }
+    }
+
+    .default {
+      background: none !important;
+    }
+
+    .menu-item {
+      width: 178.5px !important;
+      height: 46.78px !important;
+      background: rgba(48, 213, 200, 0.2) !important;
+      border-radius: 15px !important;
+    }
+
+    .menu-item:hover {
+      width: 178.5px !important;
+      height: 46.78px !important;
+      background: rgba(48, 213, 200, 0.2) !important;
+      border-radius: 15px !important;
+    }
+
+    .items-icon {
+      padding-right: 15px !important;
+      padding-left: 10px;
+
+      @media (max-width: 1024px) {
+        padding-right: 10px !important;
+        padding-left: 11px;
+      }
+    }
+
+    span {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.MuiBox-root {
+  @media (max-width: 1024px) {
+    width: 200px !important;
+  }
+
+  .MuiDrawer-paper {
+    z-index: 9 !important;
+
+    @media (max-width: 1024px) {
+      width: 200px !important;
+    }
+  }
+}

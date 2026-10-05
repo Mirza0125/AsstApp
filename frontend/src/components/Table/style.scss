@@ -1,0 +1,56 @@
+.ant-table-wrapper {
+  border: 1px solid #30d5c8;
+  border-radius: 8px;
+
+  .ant-table-thead {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+
+    .ant-table-cell {
+      background-color: #30d5c8 !important;
+    }
+  }
+
+  .ant-table-tbody {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    a {
+      font-weight: 500 !important;
+    }
+
+    img {
+      width: 37px;
+      height: 37px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.ant-table-content {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.ant-pagination-item-active {
+  border-color: #30d5c8 !important;
+}
+
+.anticon-right {
+  color: #30d5c8 !important;
+}
+
+.anticon-left {
+  color: #30d5c8 !important;
+}

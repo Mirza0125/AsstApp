@@ -1,0 +1,108 @@
+.text-area-field {
+
+
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 10px;
+        left: 16px;
+
+        @media (max-width:1366px) {
+            img {
+                height: 14px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            top: 0px;
+
+            img {
+                height: 10px;
+            }
+        }
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+        min-height: 116px;
+        height: 100%;
+        background-color: #EFEFEF;
+        border-radius: 8px;
+        border: none;
+        padding: 12px 52px;
+
+        @media (max-width:1366px) {
+            font-size: 14px;
+        }
+
+        @media(max-width: 576px) {
+            font-size: 11px;
+            padding: 6px 40px;
+        }
+
+        &:focus {
+            outline: none;
+            border: none;
+            box-shadow: none;
+            background-color: #EFEFEF;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &::placeholder {
+            font-family: 'Roboto';
+            font-weight: 600;
+            color: #A2A2A2;
+
+            @media (max-width:1366px) {
+                font-size: 14px;
+            }
+
+            @media(max-width: 576px) {
+                font-size: 11px;
+            }
+
+        }
+    }
+
+    label {
+        display: none;
+
+        &.error-message {
+            display: block;
+            color: red;
+            font-size: 14px;
+            margin: 6px 0;
+            line-height: 16px;
+            margin-bottom: 10px;
+            opacity: 0;
+            min-height: 16px;
+            max-width: 90%;
+
+            @media (max-width:1680px) {
+                font-size: 12px;
+                line-height: 14px;
+                margin: 6px 0;
+            }
+
+            @media (max-width: 1366px) {
+                margin-top: 3px;
+                min-height: 14px;
+            }
+
+            @media (max-width:1366px) and (max-height:630px) {
+                font-size: 10px;
+                margin-bottom: 6px;
+            }
+
+            @media(max-width: 576px) {
+                font-size: 10px;
+                margin: 4px 0 6px;
+            }
+        }
+    }
+}

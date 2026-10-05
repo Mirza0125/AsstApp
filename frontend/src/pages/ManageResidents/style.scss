@@ -1,0 +1,102 @@
+.residents-table-wrapper {
+  font-family: 'Poppins';
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .residents-table-heading {
+    padding: 36px 0px 40px 40px;
+    font-weight: 600;
+    font-size: 22px !important;
+    line-height: 33px;
+    flex: 1;
+  }
+  .residents-table-section {
+    padding-left: 40px;
+    padding-right: 32px;
+    font-weight: 600;
+    font-size: 22px !important;
+    line-height: 33px;
+    flex: 1;
+    .ant-table-wrapper {
+      border: 1px solid #30d5c8;
+      border-radius: 8px;
+      .ant-table-thead {
+        .ant-table-cell {
+          padding: 20px 0px 20px 0px;
+          &:nth-of-type(1) {
+            padding-left: 35px;
+          }
+        }
+      }
+
+      .ant-table-tbody {
+        .ant-table-row {
+          .ant-table-cell {
+            font-weight: 400;
+            padding: 13px 13px 13px 0px;
+            div {
+              display: flex;
+              .no-image {
+                margin-right: 10px;
+              }
+              .name {
+                font-weight: 500;
+                margin-top: 5px;
+              }
+            }
+
+            &:nth-of-type(1) {
+              padding-left: 30px;
+              width: 240px;
+            }
+            &:nth-of-type(2) {
+              width: 240px;
+            }
+            &:nth-of-type(3) {
+              width: 240px;
+            }
+            &:nth-of-type(4) {
+              width: 188px;
+            }
+            &:nth-of-type(5) {
+              width: 168px;
+            }
+            &:nth-of-type(6) {
+              width: 100px;
+            }
+          }
+        }
+      }
+      .action-btn {
+        width: 85px;
+        height: 32px;
+        background: #ffffff !important;
+        border: 1px solid #fd1b1b;
+        border-radius: 4px;
+        color: #fd1b1b;
+      }
+    }
+  }
+}
+
+.ant-table-thead {
+  th {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.profile-image {
+  width: 37px !important;
+  height: 37px !important;
+  border-radius: 50% !important;
+}
+
+.resident-dummy-pic {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}

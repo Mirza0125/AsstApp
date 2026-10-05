@@ -1,0 +1,10 @@
+import {StyleSheet} from 'react-native';
+
+export default StyleSheet.create({
+  button: {
+    marginTop: 150,
+  },
+  text: {
+    paddingHorizontal: 50,
+  },
+});

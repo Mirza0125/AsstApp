@@ -1,0 +1,15 @@
+.messages-section-wrapper {
+    padding: 36px 40px;
+
+    @media (max-width: 1366px) {
+        padding: 24px 30px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 20px;
+    }
+
+    .navigate-head {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,115 @@
+.auth-modal {
+  .modal-dialog {
+    width: 486px;
+    max-width: 100%;
+
+    .modal-content {
+      border-radius: 16px;
+      background-color: #fffbff;
+      border: none;
+    }
+  }
+
+  .modal-header {
+    border-bottom: none;
+    padding: 24px 21px 0 24px;
+
+    .modal-title {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      h1 {
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+
+      .close-icon {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .auth-modal-body-wrapper {
+    padding: 24px;
+
+    .main-title {
+      font-size: 22px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .text,
+    .purple-text {
+      color: #1e1b1e;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 24px;
+    }
+
+    .purple-text {
+      color: #932db1;
+      margin-top: 2px;
+      cursor: pointer;
+    }
+
+    .button-wrapper {
+      margin-top: 24px;
+      gap: 8px;
+
+      .lukymoon-btn {
+        background-color: #932db1;
+      }
+    }
+
+    &.sent-modal-body-wrapper,
+    &.reset-modal-body-wrapper,
+    &.consent-modal-body-wrapper {
+      .main-title {
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      .text {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    &.consent-modal-body-wrapper {
+      .main-title {
+        margin-bottom: 24px;
+      }
+
+      .checkbox-wrapper {
+        margin-bottom: 24px;
+
+        .MuiFormControlLabel-label {
+          color: #1e1b1e;
+          font-weight: 400;
+          margin-left: 8px;
+          width: 100%;
+          letter-spacing: -0.5px !important;
+          line-height: 21px;
+        }
+      }
+
+      .button-wrapper {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &.cookies-modal {
+    .modal-header {
+      display: none;
+    }
+  }
+}

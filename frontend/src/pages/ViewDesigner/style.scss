@@ -1,0 +1,118 @@
+.table-wrapper {
+  font-family: 'Poppins';
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .table-heading {
+    padding: 36px 0px 40px 40px;
+    font-weight: 600;
+    font-size: 22px !important;
+    line-height: 33px;
+    flex: 1;
+  }
+
+  .table-section {
+    padding-left: 40px;
+    padding-right: 32px;
+    font-weight: 600;
+    font-size: 22px !important;
+    line-height: 33px;
+    flex: 1;
+
+    .ant-table-wrapper {
+      border: 1px solid #30d5c8;
+      border-radius: 8px;
+
+      .ant-table-thead {
+        .ant-table-cell {
+          padding: 20px 0px 20px 0px;
+
+          &:nth-of-type(1) {
+            padding-left: 35px;
+          }
+        }
+      }
+
+      .ant-table-tbody {
+        .ant-table-row {
+          .ant-table-cell {
+            padding: 13px 8px 13px 8px;
+
+            div {
+              display: flex;
+
+              .no-image {
+                margin-right: 10px;
+              }
+
+              a {
+                margin-top: 5px;
+              }
+            }
+
+            &:nth-of-type(1) {
+              padding-left: 35px;
+              width: 250px;
+              @media (min-width: 1441px) {
+                width: 35%;
+              }
+            }
+
+            &:nth-of-type(2) {
+              width: 35%;
+              @media (min-width: 1441px) {
+                width: 35%;
+              }
+            }
+
+            &:nth-of-type(4) {
+              width: 118px;
+            }
+          }
+        }
+      }
+
+      .action-btn {
+        width: 85px;
+        height: 32px;
+        background: #ffffff !important;
+        border: 1px solid #fd1b1b;
+        border-radius: 4px;
+        color: #fd1b1b;
+      }
+    }
+  }
+}
+
+.ant-table-thead {
+  th {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.profile-image-wrapper {
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 37px !important;
+  height: 37px !important;
+  border-radius: 50% !important;
+}
+
+.designer-dummy-pic {
+  width: 37px !important;
+  height: 37px !important;
+  border-radius: 50% !important;
+}
+
+.designer-profile-text {
+  color: #30d5c8;
+  &:hover {
+    color: #30d5c8;
+  }
+}

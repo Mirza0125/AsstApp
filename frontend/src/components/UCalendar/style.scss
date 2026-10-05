@@ -1,0 +1,99 @@
+.calendar-wrapper {
+    width: 466px;
+    max-width: 100%;
+
+    .MuiYearCalendar-root,
+    .MuiMonthCalendar-root {
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        button {
+            font-family: 'Poppins';
+        }
+    }
+
+    .MuiYearCalendar-root {
+        max-height: 40px;
+
+        .MuiPickersYear-root {
+            margin: 0 13px;
+        }
+
+        .MuiPickersYear-yearButton {
+            color: #A9A9A9;
+            font-size: 15px;
+
+            &.Mui-selected {
+                color: #393E48;
+                background-color: transparent;
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .MuiMonthCalendar-root {
+        overflow-x: auto;
+
+        .MuiPickersMonth-monthButton {
+            margin: 8px 35px;
+            font-weight: 600;
+            color: #A9A9A9;
+
+            &.Mui-selected {
+                background-color: transparent;
+                border-radius: unset;
+                color: #393E48;
+                font-size: 18px;
+            }
+
+        }
+    }
+
+    .MuiDateCalendar-root {
+        margin: 0;
+        width: 100%;
+
+        .MuiPickersCalendarHeader-root {
+            display: none;
+        }
+
+        .MuiDayCalendar-header {
+            .MuiDayCalendar-weekDayLabel {
+                font-family: 'Poppins' !important;
+                margin: 0 20px;
+                font-weight: 600;
+                color: #393E48;
+                font-size: 20px;
+            }
+        }
+
+        .MuiDayCalendar-weekContainer {
+            .MuiPickersDay-root {
+                margin: 0 20px;
+                font-size: 16px;
+                color: #000;
+                font-weight: 400;
+                border-radius: 0;
+
+                &.Mui-selected {
+                    background-color: transparent;
+                    border-radius: unset;
+                    color: #30D5C8;
+                    font-weight: 700;
+                }
+            }
+
+            .MuiPickersDay-today {
+                border: unset;
+                border-radius: unset;
+            }
+        }
+
+    }
+}
